@@ -1,7 +1,7 @@
 import typer
 from ssg.site import site
 
-def __main__(source="content",dest="dist:):
-    config={}
+def main(source="content",dest="dist:):
+    config={"source"=source,"dest"=dest}
 
 typer.run(__main__)
