@@ -21,6 +21,11 @@ class Content(Mapping):
     def body(self):
         return self.data["content"]
 
+    @property
+    def type(self):
+        return self.data["type"]
+    
+
     def __getitem__(self,key):
         return self.data[key]
 
