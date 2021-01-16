@@ -41,26 +41,7 @@ class Content(Mapping):
 
     def __repr__(self):
         data={}
+        for key, value in self.data.items():
+            if key != "content":
+                data[key] = value
         return str(data)
-    for value in self.data.items():
-        if key!="content":
-            data[key]=value
-"""
-    @property:
-    body():
-    return self.data["content"]
-
-    @propert:
-    type():
-    if self.data["type"] is not set:
-        return None
-    else:
-        return self.data["type"]
-
-    @property:
-    type()
-    self.data["type"]
-"""
-
-
-
