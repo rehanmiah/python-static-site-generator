@@ -3,7 +3,7 @@ class Site:
     def __init__(self,source,dest):
         self.source = Path(source)
         self.dest = Path(dest)
-    def create_dir(self,path):
+    def create_dir(self,Path):
         destination=self.dest / Path.relative_to(self.source)
         mkdir(self.dest)
 
