@@ -1,5 +1,5 @@
 import typer
-import site from ssg.site
+from ssg.site import site
 
 def __main__(source="content",dest="dist:):
     config={}
