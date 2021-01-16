@@ -8,9 +8,10 @@ class Content(Mapping):
 
     @classmethod
     def load(cls, string):
-        __, fm, content = cls.__regex.split(string, 2)
-        metadata = load(fm,Loader=FullLoader)
+        _, fm, content = cls.__regex.split(string, 2)
+        metadata = load(fm, Loader=FullLoader)
         return cls(metadata, content)
+
 
 class Content():
     def __init__(self, metadata, content):
