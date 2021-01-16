@@ -5,6 +5,7 @@ class Parser:
     def valid_extension(self,extension):
         return extension in self.extensions
     def parse(self, path, source, dest):
+        return "hell"
 
     def write(self,path,dest,content,ext=".html"):
         full_path=dest / with_suffix(ext)
