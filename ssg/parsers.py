@@ -18,3 +18,9 @@ class Parser:
             file.write(content)
     def copy(self, path, source, dest):
         shutil.copy2(path,dest / path.relative_to(source))
+
+    class ResourceParser():
+        exyensions=[".jpg",".png",".gif",".css",".html"]
+        b=Parse()
+        b.copy()
+        
