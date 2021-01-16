@@ -8,9 +8,9 @@ class Site:
         directory.mkdir(parents=True,exist_ok=True)
     def build(self):
         self.dest.mkdir(parents=True,exist_ok=True)
-        for j in self.source.rglob("*"):
-            if j.is_dir():
-                self.create_dir(j)
+        for path in self.source.rglob("*"):
+            if path.is_dir():
+                self.create_dir(path)
 
 
 
