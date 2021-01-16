@@ -8,8 +8,8 @@ class Content(Mapping):
 
 
 
-    def load(self, cls,string):
-        __, fm, content=__regex.split(string,2)
+    def load(self, cls, string):
+        __,fm,content=__regex.split(string,2)
 
     load(fm,Loader=FullLoader)
     cls(metadata, content)
