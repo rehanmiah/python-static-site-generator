@@ -21,7 +21,7 @@ class Content():
         return self.data[key]
 
     def __iter__(self):
-        self.data()
+        return self.data()
 
     def __len__(self)
         return self.data.length()
