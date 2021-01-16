@@ -37,7 +37,7 @@ class Content(Mapping):
         return self.data()
 
     def __len__(self):
-        return self.data.length()
+        return self.data.len()
 
     def __rrepr__(self):
         data={}
