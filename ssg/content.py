@@ -16,6 +16,22 @@ class Content():
     def __init__(self, metadata, content):
         self.data=metadata
         self.data={"content":content}
+
+    def __getitem__(self,key):
+        return self.data[key]
+
+    def __iter__(self):
+        self.data()
+
+    def __len__(self)
+        return self.data.length()
+
+    def __rrepr__(self):
+        data={}
+        return str(data)
+    for value in self.data.items():
+        if key!="content":
+            data[key]=value
 """
     @property:
     body():
@@ -32,20 +48,6 @@ class Content():
     type()
     self.data["type"]
 """
-    def __getitem__(self,key):
-        return self.data[key]
 
-    def __iter__(self):
-        self.data()
-
-    def __len__(self)
-        return self.data.length()
-
-    def __rrepr__(self):
-        data={}
-        return str(data)
-    for value in self.data.items():
-        if key!="content":
-            data[key]=value
 
 
