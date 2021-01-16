@@ -23,8 +23,11 @@ class Content(Mapping):
 
     @property
     def type(self):
+        if self.data:
+            return None
+        else:
         return self.data["type"]
-    
+
 
     def __getitem__(self,key):
         return self.data[key]
