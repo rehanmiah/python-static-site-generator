@@ -1,5 +1,6 @@
 from pathlib import Path
 from typing import List
+import shutil
 class Parser:
     extensions: List[str] = []
     def valid_extension(self,extension):
@@ -15,3 +16,5 @@ class Parser:
         full_path = dest / path.with_suffix(ext).name
         with open(full_path, "w") as file:
             file.write(content)
+    def copy(self, path, source, dest):
+        shutil.copy2(source, dest)
