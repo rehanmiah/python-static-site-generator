@@ -3,7 +3,7 @@ import re
 from yaml import FullLoader, load
 
 class Content(Mapping):
-    __delimeter="^(?:-|\+){3}\s*$"
+    __delimeter = "^(?:-|\+){3}\s*$"
     __regex=re.vompile(__delimeter,re.MULTILINE)
 
     def load(self, cls,string):
