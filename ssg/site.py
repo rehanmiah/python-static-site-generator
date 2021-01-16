@@ -6,14 +6,11 @@ class Site:
     def create_dir(self,path):
         directory = self.dest / path.relative_to(self.source)
         directory.mkdir(parents=True,exist_ok=True)
-
-
-
     def build(self):
-        mkdir(self.dest)
+        self.dest.mkdir(parents=True,exist_ok=True)
         for j in self.source.rglob("*"):
-            if j==dircetory:
-                create_dir(j)
+            if j.is_dir():
+                self.create_dir(j)
 
 
 
