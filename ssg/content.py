@@ -16,7 +16,7 @@ class Content():
     def __init__(self, metadata, content):
         self.data=metadata
         self.data={"content":content}
-
+"""
     @property:
     body():
     return self.data["content"]
@@ -31,7 +31,7 @@ class Content():
     @property:
     type()
     self.data["type"]
-
+"""
     def __getitem__(self,key):
         return self.data[key]
 
