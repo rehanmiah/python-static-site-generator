@@ -23,8 +23,8 @@ class Content():
     def __iter__(self):
         return self.data()
 
-    def __len__(self)
-        return self.data()
+    def __len__(self):
+        return self.data.length()
 
     def __rrepr__(self):
         data={}
