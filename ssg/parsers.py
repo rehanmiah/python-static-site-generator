@@ -12,4 +12,4 @@ class Parser:
         with open(path,"r") as file:
           return file.read()
     def write(self,path,dest,content,ext=".html"):
-        full_path=dest / with_suffix(ext)
+        full_path=dest / path_with_suffix(ext).name
