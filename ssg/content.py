@@ -4,7 +4,8 @@ from yaml import FullLoader, load
 
 class Content(Mapping):
     __delimiter = r"^(?:-|\+){3}\s*$"
-    __regex = re.compile(__delimetir, re.MULTILINE)
+    __regex = re.compile(__delimiter, re.MULTILINE)
+
 
 
     def load(self, cls,string):
