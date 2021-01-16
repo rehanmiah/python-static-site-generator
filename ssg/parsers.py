@@ -1,4 +1,4 @@
 from pathlib import path
-from typing import list
+from typing import List
 class parser:
     extensions=[]
