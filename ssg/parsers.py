@@ -20,5 +20,5 @@ class Parser:
         shutil.copy2(path,dest / path.relative_to(source))
 
 class ResourceParser(Parser):
-    exyensions=[".jpg",".png",".gif",".css",".html"]
+    extensions=[".jpg",".png",".gif",".css",".html"]
 
