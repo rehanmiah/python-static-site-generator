@@ -9,5 +9,3 @@ class Parser:
 
     def write(self,path,dest,content,ext=".html"):
         full_path=dest / with_suffix(ext)
-        b=with open(full_path,mode=w):
-            b.write(content)
