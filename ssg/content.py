@@ -7,12 +7,10 @@ class Content(Mapping):
     __regex = re.compile(__delimiter, re.MULTILINE)
 
 
-
-    def load(self, cls, string):
-        __,fm,content=__regex.split(string,2)
-
-    load(fm,Loader=FullLoader)
-    cls(metadata, content)
+    def load(cls, string):
+        __, fm, content = cls.__regex.split(string, 2)
+        metadata = load(fm,Loader=FullLoader)
+        return cls(metadata, content)
 
 class Content():
     def __init__(self, metadata, content):
