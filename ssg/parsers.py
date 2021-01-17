@@ -7,7 +7,7 @@ from markdown import markdown
 from ssg.content import Content
 
 class MarkdownParser:
-    extensions=[".md", ".markdown"]
+    extensions:List[str] = [".md",".markdown"]
 
     def parse(self):
         content=self.read(path)
