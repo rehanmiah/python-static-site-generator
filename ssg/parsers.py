@@ -20,8 +20,9 @@ class MarkdownParser(Parser):
 
 
 
-    def parse(self):
-        content=self.read(path)
+class ReStructuredTextParser():
+    extensions=[".rst"]
+
 
 class Parser:
     extensions: List[str] = []
