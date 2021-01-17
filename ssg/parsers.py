@@ -20,8 +20,8 @@ class MarkdownParser(Parser):
 
 
 
-class ReStructuredTextParser():
-    extensions: List[str] = [".rst"]
+class ReStructuredTextParser(Parser):
+    extensions = [".rst"]
 
 
 class Parser:
