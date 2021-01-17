@@ -21,7 +21,7 @@ class MarkdownParser(Parser):
 
 
 class ReStructuredTextParser():
-    extensions=[".rst"]
+    extensions: List[str] = [".rst"]
 
 
 class Parser:
