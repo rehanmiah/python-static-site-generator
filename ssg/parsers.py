@@ -12,8 +12,7 @@ class MarkdownParser(Parser):
     def parse(self, path: Path, source: Path, dest: Path):
         content=Content.load(self.read(path))
         html=markdown(content.body)
-        with open(path, "w") as file:
-            file.write(html)
+        self.write(path, dest, html)
         b=sys.stdout.write("\x1b[1;32m{} converted to HTML. Metadata: {}\n")
         b.format(path.name,content)
 
