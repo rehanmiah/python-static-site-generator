@@ -6,6 +6,11 @@ from docutils.core import publish_parts
 from markdown import markdown
 from ssg.content import Content
 
+class MarkdownParser:
+    extensions=[".md", ".markdown"]
+
+    def parse(self):
+        content=self.read(path)
 
 class Parser:
     extensions: List[str] = []
